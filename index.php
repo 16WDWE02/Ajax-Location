@@ -22,8 +22,11 @@
 
  	<select id="cities" name="cities"></select>
 
+ 	<select id="suburbs" name="suburbs"></select>
+
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  	<script src="js/countries-cities.js"></script>
+ 	<script src="js/cities-suburbs.js"></script>
 
  </body>
  </html>
