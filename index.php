@@ -7,7 +7,7 @@
  	<h1>Where do you live?</h1>
 
  	<select id="Country">
- 		<option>Please Select a Country</option>
+ 		<option value="null">Please Select a Country</option>
  		<?php 
  			$dbc = new mysqli('localhost', 'root', '', 'AJAX_location');
 

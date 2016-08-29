@@ -3,6 +3,9 @@ $(document).ready(function(){
 });
 
 function showSuburbs(){
+	//Clear Suburbs select options when Country is changed
+	$('#suburbs').html('');
+
 	//Get the City ID
 	var CityID = $(this).val();
 
@@ -18,7 +21,8 @@ function showSuburbs(){
 
 			//Clear the Suburbs select element
 			$('#suburbs').html('');
-			$('#suburbs').append('<option value='+'>'+'Please Select a Suburb'+'</option>');
+			//Give Option a value of not a number (null)
+			$('#suburbs').append('<option value='+'null'+'>'+'Please Select a Suburb'+'</option>')	
 
 			//Check to see if there was an error returning
 			if(dataFromServer != 'error'){
